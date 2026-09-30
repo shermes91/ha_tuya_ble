@@ -128,7 +128,17 @@ ProductsMapping: dict[str, dict[str, tuple[TuyaLightEntityDescription, ...]]] = 
                 },
             ),
         )
-    }
+    },
+    "dj": {
+        "7invbdfi": (
+            TuyaLightEntityDescription(
+                key=DPCode.SWITCH_LED,
+                name=None,
+                color_mode=DPCode.WORK_MODE,
+                brightness=DPCode.BRIGHT_VALUE_V2,
+            ),
+        ),
+    },
 }
 
 # Copied from standard Tuya light component - we could add some default values here too
